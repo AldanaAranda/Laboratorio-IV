@@ -9,6 +9,7 @@ class Server{
 
     rutas () {
         this.app.use('/api/v1/peliculas', require('../routes/peliculas'))
+        this.app.use('/api/v1/actores', require('../routes/actores'))
     }
 
     listen () {
